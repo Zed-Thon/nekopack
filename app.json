@@ -1,0 +1,86 @@
+{
+  "name": "ZThon",
+  "description": "A simple Telegram userbot based on Telethon . Maintained by ZThon ",
+  "logo": "https://telegra.ph/file/f821d27af168206b472ad.mp4",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/Zed-Thon/ZelZal",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "اســم حســـابك التلـي",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "كـود ايبي ايـدي〔 App id 〕الصغيـر",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "كـود ايبي هـاش〔 Api hash 〕..",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "كـــود تيـــرمكـــس - الكـود الكبيـر مـن حـافظـة حسـابـك",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "تـــوكـــن البـــوت - من بـوت فـاذر〔 @Botfather 〕..",
+      "value": ""
+    },
+    "COMMAND_HAND_LER": {
+      "description": "نقطـــة الاوامـــر〔 . 〕لا تغيــرهـــا",
+      "value": ".",
+      "required": false
+    },
+    "ENV": {
+      "description": "لا تغيــرهـــا",
+      "value": "ANYTHING",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "كـــود مفتـــاح هيروكـــو - تروح ع الرابـط » https://dashboard.heroku.com/account  ع آخـر خانـه وتنسـخ الكـود لهنـا",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش صغيـره",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "المنطقـــه الزمنيـــه لا تغيــرهـــا",
+      "value": "Asia/Sana'a",
+      "required": false
+    },
+    "OLDZED": {
+      "description": "كـــود الســـورس .. لاتغيـــرهـــا",
+      "value": "False",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
