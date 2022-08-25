@@ -68,7 +68,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _start_bot () {
     local zippath
-    zippath="catuserbot.zip"
+    zippath="ZedThon1.zip"
     echo "⌭ جاري تنزيل اكواد السورس ⌭"
     wget -q $(_get_zlink) -O "$zippath"
     echo "⌭ تفريغ البيانات ⌭"
