@@ -1,13 +1,13 @@
-FROM zed-thon/zelzal:alpine
+FROM zed-thon/amirz:alpine
 
 #clonning repo 
-RUN git clone https://github.com/zed-thon/zelzal/tree/master.git /root/zthon
+RUN git clone https://github.com/zed-thon/amirz/tree/master.git /root/amirz
 #working directory 
-WORKDIR /root/zthon
+WORKDIR /root/amirz
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/zthon/bin:$PATH"
+(حسد) الطريق"المنزل/amirz/بن: دولار PATH"
 
-CMD ["python3","-m","zthon"]
+CMD ["amirz3","-m","amirz"]
