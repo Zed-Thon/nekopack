@@ -4,7 +4,7 @@
 _get_zlink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "zel" ]]
+    if [[ $UPSTREAM_REPO == "amiraikb" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1plZC1UaG9uL1pFTFpBTC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
@@ -24,7 +24,7 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "zel" ]]
+    if [[ $UPSTREAM_REPO == "amiraikb" ]]
     then
         rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plZC1UaG9uL1pFTFpBTA==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
@@ -58,7 +58,7 @@ _run_catgit() {
     $(_run_python_code 'from git import Repo
 import sys
 OFFICIAL_UPSTREAM_REPO="'$repolink'"
-ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "master"
+ACTIVE_BRANCH_NAME = "'$UPSTREAM_REPO_BRANCH'" or "amiraikb"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
 origin.fetch()
@@ -86,7 +86,7 @@ _start_bot () {
     echo "
 
     "
-    python3 -m zthon
+    python3 -m amiraikb
 }
 
 _start_bot
