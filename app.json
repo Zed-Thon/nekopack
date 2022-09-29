@@ -58,7 +58,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "لا تغيــرهـــا",
-      "value": "zel",
+      "value": "ami",
       "required": false
     }
   },
