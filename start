@@ -68,9 +68,9 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _start_bot () {
     local amir
-    zippath="amir1.zip"
+    zippath="zippath1.zip"
     echo "⌭ جاري تنزيل اكواد السورس ⌭"
-    wget -q $(_get_zlink) -O "$amir"
+    wget -q $(_get_zlink) -O "$zippath"
     echo "⌭ تفريغ البيانات ⌭"
     CATPATH=$(zipinfo -1 "$amir" | grep -v "/.");
     unzip -qq "$zippath"
@@ -86,7 +86,7 @@ _start_bot () {
     echo "
 
     "
-    python3 -m amir
+    python3 -m zthon
 }
 
 _start_bot
