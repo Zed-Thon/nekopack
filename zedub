@@ -70,7 +70,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _start_bot () {
     local zippath
-    zippath="ZedThon1.zip"
+    zippath="amir1.zip"
     echo "⌭ جاري تنزيل اكواد السورس ⌭"
     wget -q $(_get_zlink) -O "$zippath"
     echo "⌭ تفريغ البيانات ⌭"
@@ -84,11 +84,11 @@ _start_bot () {
     _run_catgit
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
-    echo "⌭ جـاري بـدء تنصيـب زدثـــون ⌭ "
+    echo "⌭ جـاري بـدء تنصيـب سورس امير ⌭ "
     echo "
 
     "
-    python3 -m zthon
+    python3 -m amir 
 }
 
 _start_bot
