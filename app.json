@@ -1,6 +1,6 @@
 {
-  "name": "𝗭𝗧𝗵𝗼𝗻",
-  "description": "〔 سـورس زدثــون 𝗭𝗲𝗱𝗧𝗵𝗼𝗻 𓅛 〕التحـديث الجديـد افضـل سـورسـات تليثـون يـوزربـوت العربيـة : › عربـي بالكـامل › تحديثـات متواصـله › مبنـي ع آخـر اصـدار مـن لغـة بايثـون〔 Python 3.10.6 〕- مطـور السـورس : زلـزال الهيبـه ",
+  "name": "SERTHON",
+  "description": "〔 سـورس سيرثون SERTHON 𓅛 〕التحـديث الجديـد افضـل سـورسـات تليثـون يـوزربـوت العربيـة : › عربـي بالكـامل › تحديثـات متواصـله › مبنـي ع آخـر اصـدار مـن لغـة بايثـون〔 Python 3.10.6 〕- مطـور السـورس : امير الهيبـه ",
   "logo": "https://telegra.ph/file/c91c09fb188f0f281e628.jpg",
   "keywords": ["plugin","modular","productivity"],
   "repository": "https://github.com/Zed-Thon/ZelZal",
@@ -58,7 +58,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "لا تغيــرهـــا",
-      "value": "zel",
+      "value": "https://github.com/abdalalaem/SERTHON",
       "required": false
     }
   },
