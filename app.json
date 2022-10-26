@@ -58,7 +58,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "لا تغيــرهـــا",
-      "value": "https://github.com/abdalalaem/SERTHON",
+      "value": "https://github.com/abdalalaem/Zee-Userbot",
       "required": false
     }
   },
