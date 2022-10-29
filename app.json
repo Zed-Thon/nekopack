@@ -58,7 +58,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "لا تغيــرهـــا",
-      "value": "zel",
+      "value": "https://github.com/abdalalaem/SERTHON",
       "required": false
     }
   },
