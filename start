@@ -44,7 +44,7 @@ _run_python_code() {
 _run_catpackgit() {
     $(_run_python_code 'from git import Repo
 import sys
-OFFICIAL_UPSTREAM_REPO = "https://github.com/ZThon-AR/nekopack"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/abdalalaem/nekopack"
 ACTIVE_BRANCH_NAME = "master"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
@@ -82,7 +82,7 @@ _start_bot () {
     _run_catgit
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
-    echo "⌭ جـاري بـدء تنصيـب زدثـــون ⌭ "
+    echo "⌭ جـاري بـدء تنصيـب سيرثون ⌭ "
     echo "
 
     "
