@@ -71,7 +71,7 @@ vcsi
 wand
 wget
 youtube-search
-yt_dlp
+yt-dlp==2023.02.17
 
 git+https://github.com/sandy1709/Telethon@beta
 git+https://github.com/goldsmith/Wikipedia
