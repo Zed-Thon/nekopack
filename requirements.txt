@@ -2,6 +2,7 @@ aiofiles
 aiohttp
 apscheduler
 cairosvg
+cinemagoer
 cloudscraper
 colour
 covid
@@ -33,6 +34,7 @@ motor
 moviepy
 nekos.py
 opencv-python-headless
+openai
 Pillow
 prettytable
 psutil
