@@ -45,7 +45,7 @@ _run_catpackgit() {
     $(_run_python_code 'from git import Repo
 import sys
 
-OFFICIAL_UPSTREAM_REPO = "https://github.com/ZThon-AR/nekopack"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Alapath1/nekopack"
 ACTIVE_BRANCH_NAME = "master"
 
 repo = Repo.init()
