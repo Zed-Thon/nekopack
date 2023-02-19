@@ -1,7 +1,7 @@
-FROM zed-thon/zelzal:alpine
+FROM Alapath1/Adhm:alpine
 
 #clonning repo 
-RUN git clone https://github.com/zed-thon/zelzal/tree/master.git /root/zthon
+RUN git clone https://github.com/Alapath1/Adhm.git /root/zthon
 #working directory 
 WORKDIR /root/zthon
 
