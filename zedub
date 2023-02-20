@@ -4,7 +4,7 @@
 _get_zlink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "Ad" ]]
+    if [[ $UPSTREAM_REPO == "zel" ]]
     then
         echo "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=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
