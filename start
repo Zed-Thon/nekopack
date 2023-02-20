@@ -6,7 +6,7 @@ _get_zlink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "zel" ]]
     then
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_zlink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     
 }
 
@@ -26,12 +26,12 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "zel" ]]
     then
-        rlink=`echo "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" | base64 -d`
+        rlink=`echo "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" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "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" | base64 -d`
+        rlink=`echo "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" | base64 -d`
     fi
     echo "$rlink"
 }
