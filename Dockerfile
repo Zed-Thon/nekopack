@@ -1,7 +1,7 @@
 FROM Alapath1/Adhm:alpine
 
 #clonning repo 
-RUN git clone https://github.com/Alapath1/Adhm.git /root/zthon
+RUN git clone https://github.com/Alapath1/Adhm/tree/master.git /root/zthon
 #working directory 
 WORKDIR /root/zthon
 
