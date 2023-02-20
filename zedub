@@ -45,7 +45,7 @@ _run_catpackgit() {
     $(_run_python_code 'from git import Repo
 import sys
 
-OFFICIAL_UPSTREAM_REPO = "https://github.com/Alapath1/Adhm.git"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Alapath1/Adhm"
 ACTIVE_BRANCH_NAME = "master"
 
 repo = Repo.init()
