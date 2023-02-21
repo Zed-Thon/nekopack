@@ -6,7 +6,7 @@ _get_zlink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "zel" ]]
     then
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_zlink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     
 }
 
@@ -26,12 +26,12 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "zel" ]]
     then
-        rlink=`echo "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" | base64 -d`
+        rlink=`echo "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" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "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" | base64 -d`
+        rlink=`echo "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" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -44,7 +44,7 @@ _run_python_code() {
 _run_catpackgit() {
     $(_run_python_code 'from git import Repo
 import sys
-OFFICIAL_UPSTREAM_REPO = "https://github.com/Alapath1/Adhm.git"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Alapath1/Adhm"
 ACTIVE_BRANCH_NAME = "master"
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
