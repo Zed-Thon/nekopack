@@ -4,9 +4,9 @@
 _get_zlink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "zel" ]]
+    if [[ $UPSTREAM_REPO == "sbb_b" ]]
     then
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_zlink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     fi
 }
 
@@ -24,7 +24,7 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "zel" ]]
+    if [[ $UPSTREAM_REPO == "sbb_b" ]]
     then
         rlink=`echo "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==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
@@ -45,7 +45,7 @@ _run_catpackgit() {
     $(_run_python_code 'from git import Repo
 import sys
 
-OFFICIAL_UPSTREAM_REPO = "https://github.com/Adhm/zthon"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Alapath1/Adhm"
 ACTIVE_BRANCH_NAME = "master"
 
 repo = Repo.init()
