@@ -4,9 +4,9 @@
 _get_zlink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "sbb_b" ]]
+    if [[ $UPSTREAM_REPO == "zthon" ]]
     then
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_zlink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "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=" | base64 -d
+        echo "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=" | base64 -d
     fi
 }
 
@@ -24,14 +24,14 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "sbb_b" ]]
+    if [[ $UPSTREAM_REPO == "zthon" ]]
     then
-        rlink=`echo "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==" | base64 -d`
+        rlink=`echo "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==" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "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==" | base64 -d`
+        rlink=`echo "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==" | base64 -d`
     fi
     echo "$rlink"
 }
