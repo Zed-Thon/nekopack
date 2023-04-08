@@ -1,1 +1,1 @@
-worker: bash zedub
+worker: bash som3a
