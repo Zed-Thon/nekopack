@@ -6,7 +6,7 @@ _get_zlink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "zel" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1plZC1UaG9uL1pFTFpBTC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMS9aRUxaQUwvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -16,7 +16,7 @@ _get_zlink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1plZC1UaG9uL1plbFphbC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMS9aRUxaQUwvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
     fi
 }
 
@@ -26,12 +26,12 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "zel" ]]
     then
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plZC1UaG9uL1pFTFpBTA==" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMS9aRUxaQUw=" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         rlink=`echo "${UPSTREAM_REPO}"`
     else
-        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plZC1UaG9uL1plbFphbA==" | base64 -d`
+        rlink=`echo "aHR0cHM6Ly9naXRodWIuY29tL1plaW5uMS9aRUxaQUw=" | base64 -d`
     fi
     echo "$rlink"
 }
@@ -44,10 +44,8 @@ _run_python_code() {
 _run_catpackgit() {
     $(_run_python_code 'from git import Repo
 import sys
-
-OFFICIAL_UPSTREAM_REPO = "https://github.com/ZThon-AR/nekopack"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/som3ael7amaky/nekopack"
 ACTIVE_BRANCH_NAME = "master"
-
 repo = Repo.init()
 origin = repo.create_remote("temponame", OFFICIAL_UPSTREAM_REPO)
 origin.fetch()
@@ -82,9 +80,9 @@ _start_bot () {
     _run_catpackgit
     cd $CATPATH
     _run_catgit
-    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 ../setup/updater.py ../requirements.txt
     chmod -R 755 bin
-    echo "⌭ جـاري بـدء تنصيـب زدثـــون ⌭ "
+    echo "⌭ جـاري بـدء تنصيـب ايـگس ⌭ "
     echo "
 
     "

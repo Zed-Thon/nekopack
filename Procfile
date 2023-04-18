@@ -1,1 +1,1 @@
-worker: bash start
+worker: bash som3a
