@@ -62,7 +62,7 @@ ShazamAPI
 spamwatch
 speedtest-cli
 sqlalchemy-json
-sqlalchemy==1.3.23
+sqlalchemy==2.0.19
 telegraph
 tgcrypto
 ujson
@@ -73,7 +73,7 @@ vcsi
 wand
 wget
 youtube-search
-yt-dlp==2023.07.06
+yt-dlp==2023.7.6
 
 git+https://github.com/sandy1709/Telethon@beta
 git+https://github.com/goldsmith/Wikipedia
