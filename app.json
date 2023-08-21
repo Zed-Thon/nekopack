@@ -66,11 +66,11 @@
   },{
     "url": "https://github.com/riganf/heroku-buildpack-p7zip"
   },{
+    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
+  },{
     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
   },{
     "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-  },{
-    "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
   },{
     "url": "heroku/python"
   }],
